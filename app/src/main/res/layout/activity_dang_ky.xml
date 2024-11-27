@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="22dp"
+    android:gravity="center|left"
+    tools:context=".DangKy">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:layout_above="@+id/lblChaoMung"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chào Mừng Bạn,"
+        android:textSize="20dp"
+        android:textColor="#2196F3"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng Ký Tài Khoản"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="false"
+        app:errorEnabled="true"
+        app:helperTextTextColor="#673AB7"
+        android:id="@+id/lbluser">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtHoTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text=""
+            android:hint="Nhập Username"
+            android:background="@drawable/rounded_border"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:drawableLeft="@drawable/user1"
+            android:drawablePadding="10dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lblpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="false"
+        app:errorEnabled="true"
+        app:helperTextTextColor="#673AB7"
+        android:layout_below="@+id/lbluser">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Nhập Password"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_border"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:drawableLeft="@drawable/pass1"
+            android:padding="15dp"
+            android:drawablePadding="10dp"
+            android:textStyle="bold"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lblpassAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="false"
+        app:errorEnabled="true"
+        app:helperTextTextColor="#673AB7"
+        android:layout_below="@+id/lbluser"/>
+
+    <Button
+        android:id="@+id/btnDangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng KÝ"
+        android:backgroundTint="#2196F3"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnTroVe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trở Về"
+        android:textColor="@color/white"
+        android:backgroundTint="#F3787575"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"/>
+
+</LinearLayout>
